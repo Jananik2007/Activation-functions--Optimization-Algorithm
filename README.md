@@ -2,7 +2,8 @@
 
 To analyze the impact of different activation functions and optimization
 algorithms on the performance of Artificial Neural Networks (ANNs) and to
-practice experiment management using Google Colab, Google Drive, and GitHub.
+learn best practices for managing deep learning experiments using
+cloud-based tools and version control.
 
 ## Software Requirements
 
@@ -11,13 +12,13 @@ practice experiment management using Google Colab, Google Drive, and GitHub.
 - Google Colab
 - Google Drive
 - GitHub
-- Matplotlib
-- Pandas
 - NumPy
+- Pandas
+- Matplotlib
 
 ## Experiments
 
-### Task A: Activation Function Visualization
+### Task A - Activation Function Visualization
 
 The following activation functions were implemented and visualized:
 
@@ -25,21 +26,25 @@ The following activation functions were implemented and visualized:
 - Tanh
 - ReLU
 
-Their output ranges, saturation behavior, gradient behavior,
-computational efficiency, and applications were compared.
+Their output range, saturation regions, gradient behavior,
+computational efficiency, and typical applications were compared.
 
-### Task B: Activation Function Performance
+**Notebook:** `visualization.ipynb`
 
-Identical ANN architectures were trained using:
+### Task B - Performance Comparison of Activation Functions
+
+Identical Artificial Neural Network architectures were trained using:
 
 - Sigmoid
 - Tanh
 - ReLU
 
-Training accuracy, validation accuracy, training loss, validation loss,
-and convergence behavior were compared.
+Training accuracy, validation accuracy, training loss,
+validation loss, and convergence behavior were compared.
 
-### Task C: Optimization Algorithm Comparison
+**Notebook:** `performance.ipynb`
+
+### Task C - Comparison of Optimization Algorithms
 
 The same ANN architecture was trained using:
 
@@ -48,25 +53,29 @@ The same ANN architecture was trained using:
 - RMSProp
 - Adam
 
-Training loss, validation loss, training accuracy, validation accuracy,
-and convergence speed were compared.
+Training loss, validation loss, convergence speed, training accuracy,
+and validation accuracy were compared.
+
+**Notebook:** `comparison.ipynb`
 
 ## Dataset
 
-The MNIST handwritten digit dataset was used for the ANN experiments.
+The MNIST handwritten digit dataset was used for the experiments.
 
-The dataset contains grayscale images of handwritten digits from 0 to 9.
-Each image has a size of 28 × 28 pixels.
+The dataset contains grayscale images of handwritten digits from 0 to 9,
+with each image having a size of 28 × 28 pixels.
 
 ## Experiment Management
 
-Google Colab was used for executing the deep learning experiments.
+Google Colab was used as a cloud-based environment for running
+deep learning experiments.
 
-Google Drive was used to store notebooks, trained models, and experiment
-results.
+Google Drive was used for persistent storage of notebooks,
+trained models, and experiment results.
 
-GitHub was used for version control, notebook storage, collaboration, and
-maintaining experiment history through commits.
+GitHub was used for storing the experiment notebooks,
+documenting the experiments, and maintaining version history
+through Git commits.
 
 ## Repository Structure
 
@@ -74,6 +83,8 @@ maintaining experiment history through commits.
 deep-learning-experiments/
 │
 ├── README.md
-├── notebooks/
-├── results/
-└── models/
+│
+└── notebooks/
+    ├── visualization.ipynb
+    ├── performance.ipynb
+    └── comparison.ipynb
